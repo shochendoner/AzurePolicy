@@ -1,0 +1,198 @@
+{
+ "properties": {
+  "displayName": "GPS-INITAITVE-GOVERN",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "Cloud Security Framework",
+   "parameterScopes": {
+    "listOfAllowedLocations": "/providers/Microsoft.Management/managementGroups/CloudPracticeStaff",
+    "listOfResourceTypesNotAllowed": "/providers/Microsoft.Management/managementGroups/CloudPracticeStaff",
+    "listOfResourceTypesAllowed": "/providers/Microsoft.Management/managementGroups/CloudPracticeStaff"
+   },
+   "createdBy": "cf451f85-e97b-4cac-9795-562e4ab6351f",
+   "createdOn": "2020-12-17T16:01:55.5267188Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Allowed locations_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": [
+       "eastus",
+       "centralus",
+       "eastus2"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed locations for resource groups_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e765b5de-1225-4ba3-bd56-1ac6695af988",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": [
+       "eastus",
+       "eastus2",
+       "centralus"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Audit resource location matches resource group location_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0a914e76-4921-4c19-b460-a2d36003525a",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "There should be more than one owner assigned to your subscription_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/09024ccc-0c5f-475e-9457-b7c0d9ed487b",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Email notification to subscription owner for high severity alerts should be enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0b15565f-aa9e-48ba-8619-45960f2c314d",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Custom subscription owner roles should not exist_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/10ee2ea2-fb4d-45b8-a7e9-a2e770044cd9",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Require a tag and its value on resources_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+    "parameters": {
+     "tagName": {
+      "value": "Cost Center"
+     },
+     "tagValue": {
+      "value": "0000"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Append a tag and its value to resources_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+    "parameters": {
+     "tagName": {
+      "value": "Cost Center"
+     },
+     "tagValue": {
+      "value": "0000"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Append a tag and its value to resource groups_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/49c88fc8-6fd1-46fd-a676-f12d1d3a4c71",
+    "parameters": {
+     "tagName": {
+      "value": "Cost Center"
+     },
+     "tagValue": {
+      "value": "0000"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "A maximum of 3 owners should be designated for your subscription_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4f11b553-d42e-4e3a-89be-32ca364cad4c",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Subscriptions should have a contact email address for security issues_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4f4f78b8-e367-4b10-a341-d9a4ad5cf1c7",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "External accounts with write permissions should be removed from your subscription_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5c607a2e-c700-4744-8254-d77e7c9eb5e4",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "External accounts with read permissions should be removed from your subscription_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5f76cf89-fbf2-47fd-a3f4-b891fa780b60",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Not allowed resource types_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6c112d4e-5bc7-47ae-a041-ea2d9dccd749",
+    "parameters": {
+     "listOfResourceTypesNotAllowed": {
+      "value": [
+       "conexlink.mycloudit/accounts",
+       "84codes.cloudamqp/listcommunicationpreference",
+       "84codes.cloudamqp/operations",
+       "84codes.cloudamqp/servers",
+       "84codes.cloudamqp/updatecommunicationpreference"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Email notification for high severity alerts should be enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6e2593d9-add6-4083-9c9b-4b7d2188c899",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "MFA should be enabled accounts with write permissions on your subscription_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9297c21d-2ed6-4474-b48f-163f75654ce3",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed resource types_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a08ec900-254a-4555-9bf5-e42af04b5c5c",
+    "parameters": {
+     "listOfResourceTypesAllowed": {
+      "value": [
+       "microsoft.web/sites"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Audit usage of custom RBAC rules_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a451c1ef-c6ca-483d-87ed-f49761e3ffb5",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "MFA should be enabled on accounts with read permissions on your subscription_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e3576e28-8b17-4677-84c3-db2990658d64",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "External accounts with owner permissions should be removed from your subscription_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f8456c1c-aa66-4dfb-861a-25d127b775c9",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/CloudPracticeStaff/providers/Microsoft.Authorization/policySetDefinitions/5df97ab67f6d408793402477",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "5df97ab67f6d408793402477"
+}
