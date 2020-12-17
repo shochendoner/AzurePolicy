@@ -1,0 +1,142 @@
+{
+ "properties": {
+  "displayName": "GPS-INITATIVE-KEYVAULT",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "Cloud Security Framework",
+   "version": "",
+   "parameterScopes": {
+    "eventHubRuleId": "/subscriptions/02c0fe26-57cd-42b5-ab33-a7fa93403dd6/resourcegroups/steve/providers/microsoft.eventhub/namespaces/stevespace",
+    "eventHubLocation": "/providers/Microsoft.Management/managementGroups/CloudPracticeStaff"
+   },
+   "createdBy": "cf451f85-e97b-4cac-9795-562e4ab6351f",
+   "createdOn": "2020-12-17T15:34:28.6184117Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Key vault should have purge protection enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0b60c0b2-2dc2-4e1c-b5c9-abbed971de53",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Key vault should have soft delete enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e66c121-a66a-4b1f-9b83-0fd99bf0fc2d",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Firewall should be enabled on Key Vault_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/55615ac9-af46-4a59-874e-391cc3dfb490",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Private endpoint should be configured for Key Vault_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5f0bc445-3935-4915-9981-011aa2b46147",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Diagnostic logs in Key Vault should be enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cf820ca0-f99e-4f3e-84fb-66e913812d21",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Deploy Diagnostic Settings for Key Vault to Event Hub_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ed7c8c13-51e7-49d1-8a43-8490431a0da2",
+    "parameters": {
+     "eventHubRuleId": {
+      "value": "/subscriptions/02c0fe26-57cd-42b5-ab33-a7fa93403dd6/resourcegroups/steve/providers/microsoft.eventhub/namespaces/stevespace/authorizationrules/rootmanagesharedaccesskey"
+     },
+     "eventHubLocation": {
+      "value": "eastus"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Certificates should use allowed key types_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1151cede-290b-4ba0-8b38-0ad145ac888f",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Keys should have expiration dates set_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/152b15f7-8e1f-4c1f-ab71-8c010ba5dbc0",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Keys should have the specified maximum validity period_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/49a22571-d204-4c91-a7b6-09b1a586fbc9",
+    "parameters": {
+     "maximumValidityInDays": {
+      "value": 365
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Keys should have more than the specified number of days before expiration_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5ff38825-c5d8-47c5-b70e-069a21955146",
+    "parameters": {
+     "minimumDaysBeforeExpiration": {
+      "value": 90
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Keys should be the specified cryptographic type RSA or EC_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/75c4f823-d65c-4f29-a733-01d0077fdbcb",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Keys using RSA cryptography should have a specified minimum key size_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/82067dbb-e53b-4e06-b631-546d197452d9",
+    "parameters": {
+     "minimumRSAKeySize": {
+      "value": 2048
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Keys should not be active for longer than the specified number of days_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c26e4b24-cf98-4c67-b48b-5a25c4c69eb9",
+    "parameters": {
+     "maximumValidityInDays": {
+      "value": 365
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Certificates using RSA cryptography should have the specified minimum key size_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cee51871-e572-4576-855c-047c820360f0",
+    "parameters": {
+     "minimumRSAKeySize": {
+      "value": 2048
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Keys using elliptic curve cryptography should have the specified curve names_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ff25f3c8-b739-4538-9d07-3d6d25cfb255",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/CloudPracticeStaff/providers/Microsoft.Authorization/policySetDefinitions/b99ba5e442644435ad85727f",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "b99ba5e442644435ad85727f"
+}
