@@ -1,0 +1,130 @@
+{
+ "properties": {
+  "displayName": "GPS-INITIATIVE-NETWORK",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "Cloud Security Framework",
+   "parameterScopes": {
+    "nsgRegion": "/providers/Microsoft.Management/managementGroups/CloudPracticeStaff",
+    "networkWatcherRG": "/subscriptions/02c0fe26-57cd-42b5-ab33-a7fa93403dd6",
+    "listOfLocations": "/providers/Microsoft.Management/managementGroups/CloudPracticeStaff"
+   },
+   "createdBy": "cf451f85-e97b-4cac-9795-562e4ab6351f",
+   "createdOn": "2020-12-18T15:22:32.5839401Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Deploy a flow log resource with target network security group_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0db34a60-64f4-4bf6-bd44-f95c16cf34b9",
+    "parameters": {
+     "nsgRegion": {
+      "value": "eastus"
+     },
+     "storageId": {
+      "value": "flow_data"
+     },
+     "networkWatcherRG": {
+      "value": "securitydata"
+     },
+     "networkWatcherName": {
+      "value": "GP_NW"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Gateway subnets should not be configured with a network security group_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/35f9c03a-cc27-418e-9c0c-539ff999d010",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Network interfaces should not have public IPs_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83a86a26-fd1f-447c-b59d-e51f44264114",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Network interfaces should disable IP forwarding_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/88c0b9da-ce96-4b03-9635-f29a937e2900",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Deploy network watcher when virtual networks are created_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a9b99dd8-06c5-4317-8629-9d86a3c6e7d9",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Network Watcher should be enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b6e2945c-0b7b-40f5-9233-7a5323b5cdc6",
+    "parameters": {
+     "listOfLocations": {
+      "value": [
+       "eastus",
+       "eastus2",
+       "centralus"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Non-internet-facing virtual machines should be protected with network security groups_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bb91dfba-c30d-4263-9add-9c2384e659a6",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Flow log should be configured for every network security group_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c251913d-7d24-4958-af87-478ed3b9ba41",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Event Hub should use a virtual network service endpoint_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d63edb4a-c612-454d-b47d-191a724fcbf0",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "All network ports should be restricted on network security groups associated to your virtual machine_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9daedab3-fb2d-461e-b861-71790eead4f6",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Management ports of virtual machines should be protected with just-in-time network access control_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b0f33259-77d7-4c9e-aac6-3aabcfae693c",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Management ports should be closed on your virtual machines_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/22730e10-96f6-4aac-ad84-9383d35b5917",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "SSH access from the Internet should be blocked_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2c89a2e5-7285-40fe-afe0-ae8654b92fab",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "RDP access from the Internet should be blocked_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e372f825-a257-4fb8-9175-797a8a8627d6",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/CloudPracticeStaff/providers/Microsoft.Authorization/policySetDefinitions/d8fb504a727344aeafd9065a",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "d8fb504a727344aeafd9065a"
+}
