@@ -1,0 +1,43 @@
+{
+ "properties": {
+  "displayName": "gps001-deny-public-blob-storage",
+  "policyType": "Custom",
+  "mode": "All",
+  "metadata": {
+   "createdBy": "d80ddd62-5c7b-4950-966a-073fd7519505",
+   "createdOn": "2021-03-24T19:51:20.1204611Z",
+   "updatedBy": "81ce480b-63a9-48c5-b78d-36536e2bb83a",
+   "updatedOn": "2021-03-25T19:42:19.8337616Z",
+   "gitHubPolicy": {
+    "digest": "6485d035273335a1af763185bbad8df9bea566cc",
+    "repoName": "taylor-bianchi/policy_poc",
+    "commitSha": "ab90fc84fbd9bb3d4ee13810b97d662dcef71b28",
+    "runUrl": "https://github.com/taylor-bianchi/policy_poc/actions/runs/687717620",
+    "filepath": "policies/gps001-deny-public-blob-storage_a779cf7e-31e1-4052-a979-85803398c5ba"
+   }
+  },
+  "parameters": {},
+  "policyRule": {
+   "if": {
+    "allOf": [
+     {
+      "field": "type",
+      "equals": "Microsoft.Storage/storageAccounts"
+     },
+     {
+      "not": {
+       "field": "Microsoft.Storage/storageAccounts/allowBlobPublicAccess",
+       "equals": "false"
+      }
+     }
+    ]
+   },
+   "then": {
+    "effect": "deny"
+   }
+  }
+ },
+ "id": "/subscriptions/61d9a225-9eed-4706-97ab-f8d2961b70ea/providers/Microsoft.Authorization/policyDefinitions/a779cf7e-31e1-4052-a979-85803398c5ba",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "a779cf7e-31e1-4052-a979-85803398c5ba"
+}

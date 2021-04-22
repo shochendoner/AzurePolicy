@@ -1,0 +1,32 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "gps001-deny-public-blob-storage",
+  "policyDefinitionId": "/subscriptions/61d9a225-9eed-4706-97ab-f8d2961b70ea/providers/Microsoft.Authorization/policyDefinitions/a779cf7e-31e1-4052-a979-85803398c5ba",
+  "scope": "/subscriptions/61d9a225-9eed-4706-97ab-f8d2961b70ea",
+  "notScopes": [],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "Taylor Bianchi",
+   "parameterScopes": {},
+   "createdBy": "d80ddd62-5c7b-4950-966a-073fd7519505",
+   "createdOn": "2021-03-24T20:52:52.5582042Z",
+   "updatedBy": "81ce480b-63a9-48c5-b78d-36536e2bb83a",
+   "updatedOn": "2021-03-25T19:42:20.2575733Z",
+   "gitHubPolicy": {
+    "digest": "16dabe708e767d0c6b5a97e00d95e676bf3f1dd1",
+    "repoName": "taylor-bianchi/policy_poc",
+    "commitSha": "ab90fc84fbd9bb3d4ee13810b97d662dcef71b28",
+    "runUrl": "https://github.com/taylor-bianchi/policy_poc/actions/runs/687717620",
+    "filepath": "policies/gps001-deny-public-blob-storage_a779cf7e-31e1-4052-a979-85803398c5ba/assign.gps001-deny-public-blob-storage_391e9a4d11ed45ce93fad200.json"
+   }
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/61d9a225-9eed-4706-97ab-f8d2961b70ea/providers/Microsoft.Authorization/policyAssignments/391e9a4d11ed45ce93fad200",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "391e9a4d11ed45ce93fad200"
+}
